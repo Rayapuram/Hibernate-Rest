@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ps.User" table="venky.user">
+        <id name="userID" type="int">
+            <column name="userID" precision="5" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="Firstname" type="string">
+            <column name="Firstname" length="20" />
+        </property>
+        <property name="Lastname" type="string">
+            <column name="Lastname" length="20" />
+        </property>
+        <property name="Address" type="string">
+            <column name="Address" length="7"  />
+        </property>
+          <property name="City" type="string">
+            <column name="City" length="7"  />
+        </property>
+    </class>
+</hibernate-mapping>
